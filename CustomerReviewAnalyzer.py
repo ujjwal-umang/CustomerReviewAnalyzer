@@ -7,14 +7,6 @@ from pydantic import BaseModel
 from google.genai import types
 from Review import Review
 
-class Review(BaseModel):
-    Review: str
-    Rating: int
-    Sentiment: str
-    Pros: list[str]
-    Cons: list[str]
-
-
 #load environment variables
 load_dotenv()
 
